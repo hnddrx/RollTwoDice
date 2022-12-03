@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Let's Roll!</title>
+    <!-- Title Icon -->
+    <link rel ='icon' href ='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2-Dice-Icon.svg/2048px-2-Dice-Icon.svg.png'>
+    <!--Stylesheet-->
+    <link rel='stylesheet' href='./assets/css/game.css'>
+    <!--Script for Icon-->
+    <script src='https://kit.fontawesome.com/83f9f775a3.js' crossorigin='anonymous'></script>
+    <!-- Script -->
+    <script src='./assets/js/nxtlvl.js' defer></script>
+</head>
+<body>
+    <main>
+        <div class='nav'>
+            <div class='navbar-container'>
+                <div class='instruction'>
+                    <a href='instruction.html'>
+                        <i class='fa-solid fa-chalkboard-user'> instructions</i>
+                    </a>
+                </div>
+
+                <h1>
+                    <i class='fa-solid fa-dice'></i> Dice Game
+                </h1>
+
+                <div class='quit'>
+                    <a id='quit'>
+                        <i class='fa-solid fa-door-open'> Exit</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p id='max-points'></p>
+        <!--display if you won or lost-->
+        <p id='win'></p>
+        <p id='next-roll' style='margin-bottom: 20px;'></p>
+        <div class='container'>
+            <div class='dice-wrapper'>
+                <img src='./assets/img/dice-01.svg' id='die-1'>
+                <img src='./assets/img/dice-02.svg' id='die-2'>
+                <img src='./assets/img/dice-03.svg' id='die-3'>
+            </div>
+            <p id='points'>Points: 0</p>
+            <p id='chances'></p>
+            <button id='roll'>LET'S ROLL</button>
+            <a  id='reset'>Reset</a>
+    </div>
+    </main>
+</body>
+</html>
